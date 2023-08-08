@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 export const Profile = ({ user: { avatar, username, tag, location } }) => {
   return (
