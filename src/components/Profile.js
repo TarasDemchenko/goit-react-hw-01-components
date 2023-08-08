@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const Profile = ({ user: { avatar, username, tag, location } }) => {
   return (
     <div>
