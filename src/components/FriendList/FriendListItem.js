@@ -1,12 +1,14 @@
+import { FriendItem } from './FriendList.styled';
+
 const FriendListItem = ({ avatar, name, isOnline }) => {
   const statusClass = isOnline ? 'online' : 'offline';
 
   return (
-    <li className="item">
-      <span className={`status ${statusClass}`}></span>
-      <img className="avatar" src={avatar} alt="User avatar" width="48" />
-      <p className="name">{name}</p>
-    </li>
+    <FriendItem>
+      <span>{statusClass}</span>
+      <img src={avatar} alt="User avatar" width="48" />
+      <p>{name}</p>
+    </FriendItem>
   );
 };
 

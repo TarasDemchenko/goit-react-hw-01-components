@@ -1,10 +1,12 @@
+import { Th } from './TransactionHistory.styled';
+
 const TableHeader = () => {
   return (
     <thead>
       <tr>
-        <th>Type</th>
-        <th>Amount</th>
-        <th>Currency</th>
+        <Th>Type</Th>
+        <Th>Amount</Th>
+        <Th>Currency</Th>
       </tr>
     </thead>
   );

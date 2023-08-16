@@ -1,9 +1,11 @@
+import { Td } from './TransactionHistory.styled';
+
 const TransactionRow = ({ type, amount, currency }) => {
   return (
     <tr>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
+      <Td>{type}</Td>
+      <Td>{amount}</Td>
+      <Td>{currency}</Td>
     </tr>
   );
 };
