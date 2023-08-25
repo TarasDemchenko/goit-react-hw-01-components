@@ -9,7 +9,6 @@ export const ListStats = styled.ul`
   list-style: none;
   display: flex;
   gap: 8px;
-  background-color: grey;
   padding-left: 0;
   justify-content: center;
 `;

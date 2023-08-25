@@ -1,7 +1,7 @@
-import { FriendItem } from './FriendList.styled';
+import { FriendItem, Offline, Online } from './FriendList.styled';
 
 const FriendListItem = ({ avatar, name, isOnline }) => {
-  const statusClass = isOnline ? 'online' : 'offline';
+  const statusClass = isOnline ? <Online /> : <Offline />;
 
   return (
     <FriendItem>
