@@ -1,6 +1,6 @@
 import FriendList from './FriendList/FriendList';
 import { Profile } from './Profile/Profile';
-import { StatisticsProfile } from './Statistic/Statistics';
+import { Statistics } from './Statistic/Statistics';
 import { StatsProfile } from './Statistic/StatsProfile';
 import profileItems from './data.json';
 import userProfile from './user.json';
@@ -14,7 +14,7 @@ export const App = () => {
     <div>
       <Profile user={userProfile} />
       <StatsProfile user={userProfile} />
-      <StatisticsProfile items={profileItems} />
+      <Statistics title="Upload stats" items={profileItems} />
       <FriendList friends={friends} />
       <TransactionHistory items={transaction} />
       <GlobalStyle />

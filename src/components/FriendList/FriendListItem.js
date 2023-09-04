@@ -1,13 +1,13 @@
-import { FriendItem, Offline, Online } from './FriendList.styled';
+import { FriendItem, StatusSpan } from './FriendList.styled';
 
-const FriendListItem = ({ avatar, name, isOnline }) => {
-  const statusClass = isOnline ? <Online /> : <Offline />;
-
+const FriendListItem = ({ friend }) => {
   return (
     <FriendItem>
-      <span>{statusClass}</span>
-      <img src={avatar} alt="User avatar" width="48" />
-      <p>{name}</p>
+      <StatusSpan
+        style={{ backgroundColor: friend.isOnline ? 'green' : 'red' }}
+      />
+      <img src={friend.avatar} alt="User avatar" width="48" />
+      <p>{friend.name}</p>
     </FriendItem>
   );
 };

@@ -7,10 +7,10 @@ import {
 
 import { getRandomColor } from '../../JS/Color';
 
-export const StatisticsProfile = ({ items }) => {
+export const Statistics = ({ title, items }) => {
   return (
     <SectionStats>
-      <ItemStats>Upload stats</ItemStats>
+      {title && <ItemStats>{title}</ItemStats>}
       <ListStats>
         {items.map(item => (
           <ListItem key={item.id} style={{ backgroundColor: getRandomColor() }}>

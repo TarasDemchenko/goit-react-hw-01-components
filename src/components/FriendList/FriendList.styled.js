@@ -5,15 +5,7 @@ export const FriendItem = styled.li`
   align-items: center;
 `;
 
-export const Online = styled.div`
-  background-color: green;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-`;
-
-export const Offline = styled.div`
-  background-color: red;
+export const StatusSpan = styled.span`
   width: 20px;
   height: 20px;
   border-radius: 50%;
